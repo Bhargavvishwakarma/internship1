@@ -24,7 +24,7 @@ if add_selectbox=="Prediction":
     if st.button('submit'):
         with st.spinner('Wait for it...'):
             time.sleep(3)
-        loaded_model = joblib.load("randomforest_model(2)")
+        loaded_model = joblib.load("randomforest_model")
         result = loaded_model.predict([l1])
         print(result)
         st.success("Done!")
